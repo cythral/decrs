@@ -15,8 +15,8 @@ phases:
 
   build:
     commands:
-      - ./scripts/build-docker-images.sh $REPOSITORY_URI $GIT_COMMIT
+      - ./scripts/build-docker-images.sh $REPOSITORY_URI $CODEBUILD_GIT_COMMIT
 
   post_build:
     commands:
-      - ./scripts/push-docker-images.sh $REPOSITORY_URI $GIT_COMMIT
+      - ./scripts/push-docker-images.sh $REPOSITORY_URI $CODEBUILD_GIT_COMMIT
