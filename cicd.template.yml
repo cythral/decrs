@@ -61,7 +61,7 @@ Resources:
         EnvironmentVariables:
           - Name: REPOSITORY_URI
             Value: !Sub public.ecr.aws/cythral/${DockerRepo}
-        Type: LINUX_CONTAINER
+        Type: ARM_CONTAINER
       Cache:
         Type: LOCAL
         Modes:
