@@ -56,7 +56,7 @@ Resources:
       EncryptionKey: !ImportValue cfn-utilities:ArtifactKeyArn
       Environment:
         PrivilegedMode: true
-        Image: aws/codebuild/standard:5.0
+        Image: aws/codebuild/amazonlinux2-aarch64-standard:2.0
         ComputeType: BUILD_GENERAL1_SMALL
         EnvironmentVariables:
           - Name: REPOSITORY_URI
