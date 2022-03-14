@@ -5,8 +5,8 @@ use rusoto_core::Region;
 use rusoto_kms::{Kms,KmsClient,DecryptRequest};
 
 macro_rules! error {
-    ($fmt:expr) => ({ eprintln!(concat!($fmt, "\n")); std::process::exit(-1) });
-    ($fmt:expr, $arg:tt) => ({ eprintln!(concat!($fmt, "\n"), $($arg)*); std::process::exit(-1) });
+    ($fmt:expr) => ({ eprintln!(concat!($fmt, "\n")); std::process::exit(1) });
+    ($fmt:expr, $arg:tt) => ({ eprintln!(concat!($fmt, "\n"), $($arg)*); std::process::exit(1) });
 }
 
 fn get_ciphertext() -> Bytes

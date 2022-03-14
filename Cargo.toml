@@ -10,3 +10,6 @@ tokio = "1.17.0"
 rusoto_core = "0.47.0"
 rusoto_kms = "0.47.0"
 openssl = { version = "0.10.38", features = ["vendored"] }
+
+[target.aarch64-unknown-linux-musl]
+rustflags = [ "-C", "target-feature=-outline-atomics" ]

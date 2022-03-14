@@ -1,12 +1,12 @@
-FROM public.ecr.aws/prima/rust:1.55.0-1 as build
+FROM public.ecr.aws/docker/library/rust:1.59.0-alpine3.15 as build
 WORKDIR /app
+RUN rustup target add aarch64-unknown-linux-musl
+RUN apk add --no-cache make perl make musl-dev
+
 COPY . ./
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends musl-tools
-RUN rustup target add x86_64-unknown-linux-musl
-RUN cargo build --target=x86_64-unknown-linux-musl --release
-RUN strip target/x86_64-unknown-linux-musl/release/decrs
+RUN cargo build --target=aarch64-unknown-linux-musl --release
+RUN strip target/aarch64-unknown-linux-musl/release/decrs
 
 FROM scratch
-COPY --from=build /app/target/x86_64-unknown-linux-musl/release/decrs /decrs
+COPY --from=build /app/target/aarch64-unknown-linux-musl/release/decrs /decrs
 ENTRYPOINT [ "/decrs" ]
