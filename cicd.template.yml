@@ -62,6 +62,8 @@ Resources:
           - Name: REPOSITORY_URI
             Value: !Sub public.ecr.aws/cythral/${DockerRepo}
         Type: ARM_CONTAINER
+      Cache:
+        Type: NO_CACHE
       Artifacts:
         Type: NO_ARTIFACTS
       Source:
