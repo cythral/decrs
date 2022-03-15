@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cicd", "cicd", "{A649F973-6FD7-45DC-B793-D203CC97C174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicd.Artifacts", "cicd\Cicd.Artifacts\Cicd.Artifacts.csproj", "{E40A4756-09FE-4C54-80DC-6D64BDFF9838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicd.BuildDriver", "cicd\Cicd.BuildDriver\Cicd.BuildDriver.csproj", "{4737B9F9-C428-4D37-B48F-4644BE863615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicd.Utils", "cicd\Cicd.Utils\Cicd.Utils.csproj", "{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40A4756-09FE-4C54-80DC-6D64BDFF9838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40A4756-09FE-4C54-80DC-6D64BDFF9838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40A4756-09FE-4C54-80DC-6D64BDFF9838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40A4756-09FE-4C54-80DC-6D64BDFF9838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4737B9F9-C428-4D37-B48F-4644BE863615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4737B9F9-C428-4D37-B48F-4644BE863615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4737B9F9-C428-4D37-B48F-4644BE863615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4737B9F9-C428-4D37-B48F-4644BE863615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E40A4756-09FE-4C54-80DC-6D64BDFF9838} = {A649F973-6FD7-45DC-B793-D203CC97C174}
+		{4737B9F9-C428-4D37-B48F-4644BE863615} = {A649F973-6FD7-45DC-B793-D203CC97C174}
+		{E2ED7975-7C95-40F0-9B1E-BF9C6DCE67C2} = {A649F973-6FD7-45DC-B793-D203CC97C174}
+	EndGlobalSection
+EndGlobal

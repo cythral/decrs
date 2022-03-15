@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk" InitialTargets="SetupCicd">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ProjectRootDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../../'))</ProjectRootDirectory>
+        <CicdOutputFolder>$(ProjectRootDirectory)bin/Cicd/</CicdOutputFolder>
+        <ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BuildTargets Condition="'$(CI)' != ''">Build;Publish</BuildTargets>
+        <BuildTargets Condition="'$(CI)' == ''">Build</BuildTargets>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="ProjectRootDirectory">
+            <_Parameter1>$(ProjectRootDirectory)</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.1.127" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="YamlDotNet" Version="11.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Cicd.Artifacts/Cicd.Artifacts.csproj" />
+        <ProjectReference Include="../Cicd.Utils/Cicd.Utils.csproj" />
+    </ItemGroup>
+
+    <Target Name="SetupCicd">
+        <MakeDir Directories="$(CicdOutputFolder)" />
+    </Target>
+
+    <Target Name="RestoreTools" AfterTargets="Restore">
+        <Exec Command="dotnet tool restore" ConsoleToMsBuild="true" />
+    </Target>
+</Project>

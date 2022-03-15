@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net6.0": {
+      "AWSSDK.CloudFormation": {
+        "type": "Direct",
+        "requested": "[3.7.9.13, )",
+        "resolved": "3.7.9.13",
+        "contentHash": "JSv5/yA1zG7EdlpA8179i3/8eKlp1uwON8ZLS+oyGu3lRrX3/o4MI+bUddgnodOA81Dud39i58RAsw/oYnd44w==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.8.9, 4.0.0)"
+        }
+      },
+      "AWSSDK.ECR": {
+        "type": "Direct",
+        "requested": "[3.7.3.4, )",
+        "resolved": "3.7.3.4",
+        "contentHash": "+6V/QNYt4J2dXl2dNcVvdj4QkJZs2OfC0hIOVJ9pVpJSVZApttpZ1naQ8UtcyHE6RbKm/de+7Y/c0MzYJsWMMg==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.8.9, 4.0.0)"
+        }
+      },
+      "AWSSDK.ECRPublic": {
+        "type": "Direct",
+        "requested": "[3.7.0.135, )",
+        "resolved": "3.7.0.135",
+        "contentHash": "/y6bUrQ6B/tp8NsInV1Ctg/iJleLYpzIr5VYT33JqKqldQiPIFej/G32iw6MetF0op/x7cJLrgH2faAJnxY6sQ==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.8.9, 4.0.0)"
+        }
+      },
+      "AWSSDK.KeyManagementService": {
+        "type": "Direct",
+        "requested": "[3.7.2.80, )",
+        "resolved": "3.7.2.80",
+        "contentHash": "1z9VKKcBErs2sXL89TjUhJvtFgLUCKsCYqR2mWNjtNkvFWIGfHEuVLD7sBjfzcnngH1PqeWFsC/FaYViwC/WTQ==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.8.9, 4.0.0)"
+        }
+      },
+      "StyleCop.Analyzers": {
+        "type": "Direct",
+        "requested": "[1.2.0-beta.354, )",
+        "resolved": "1.2.0-beta.354",
+        "contentHash": "oDSJNxnEvIzAQTkpkc/FnJP4dQ7TV6fHMsI+2ckU5DOaMiwiEfh1fawMsSqz2bCoNwbTt9lS6MgYvyVKujNJoA==",
+        "dependencies": {
+          "StyleCop.Analyzers.Unstable": "1.2.0.354"
+        }
+      },
+      "AWSSDK.Core": {
+        "type": "Transitive",
+        "resolved": "3.7.8.9",
+        "contentHash": "z6QrtbaOulwSKhWqcBtSmOUk6FAMtSR9EuclukS9qIovqIxjfKGjJB1K+01dXiiyGn34OhIPf+JxBETu5WPAFw=="
+      },
+      "StyleCop.Analyzers.Unstable": {
+        "type": "Transitive",
+        "resolved": "1.2.0.354",
+        "contentHash": "/3RlM31XbJ02gaWh7dVumWOyMvGHswb/zygGJXd9oEJMRyyYc/HFJlAC5gBPxvi9cB4CMvIyyUTmZz5VLKwTvg=="
+      }
+    }
+  }
+}

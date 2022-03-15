@@ -1,0 +1,66 @@
+name: Main Pipeline
+
+on:
+  push:
+    branches:
+      - "master"
+    tags:
+      - "*"
+  workflow_dispatch:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
+
+env:
+  DOTNET_NOLOGO: "true"
+  CONFIGURATION: Release
+  DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
+  DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY: "false"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      artifacts-location: ${{ steps.build.outputs.artifacts-location }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_SHARED_ROLE }}
+          aws-region: us-east-1
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+
+      - name: Install CDK
+        run: npm install --global cdk
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v2
+
+      - name: Display .NET Info
+        run: dotnet --info
+
+      - name: Expose GitHub Runtime
+        uses: crazy-max/ghaction-github-runtime@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build
+        id: build
+        run: |
+          dotnet run \
+            --verbosity minimal \
+            --project cicd/Cicd.BuildDriver/Cicd.BuildDriver.csproj -- \
+            --version ${{ github.ref_name }} \
+            --push ${{ startsWith(github.ref, 'refs/tags/') }}
