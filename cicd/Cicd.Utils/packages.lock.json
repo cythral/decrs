@@ -31,11 +31,11 @@
       },
       "AWSSDK.KeyManagementService": {
         "type": "Direct",
-        "requested": "[3.7.3.13, )",
-        "resolved": "3.7.3.13",
-        "contentHash": "c6AHT1LXcLThEmZVh6pL5JMx2Cs5lUueWUSESgWeSLPXaLYSiPb2z4HA/6hgT0HzKYNYOHZLKi2RMbv0/NO2cQ==",
+        "requested": "[3.7.3.23, )",
+        "resolved": "3.7.3.23",
+        "contentHash": "eVOx9rEwj3P97Vh7123ROO6y5+Bn3G6vpIw5E8A+c4qGJYTQkncLbYxFekwUaXQUmf/UXmWFq2TgTogJV+Hp0g==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.11.5, 4.0.0)"
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
         }
       },
       "StyleCop.Analyzers": {
@@ -49,8 +49,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.11.5",
-        "contentHash": "lmOw0KRuIoYop67Xqke7usxY1RZPHySFSsw0tb9wW0DNGOrIpBLw9RCQj3YYCNo5K9+5yZ8k42ojJcdLmZK75w=="
+        "resolved": "3.7.11.15",
+        "contentHash": "aw5j3az+IBV4KSXUwEO1A3WTdo8axLXe9CT+IKGRCfeKMEXbNKyyn+33NxjIwrTK4ocBYHpJBOlyd2ebPe/jZQ=="
       },
       "StyleCop.Analyzers.Unstable": {
         "type": "Transitive",
