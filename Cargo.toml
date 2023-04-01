@@ -6,7 +6,7 @@ edition = "2018"
 [dependencies]
 bytes = "1.2.1"
 base64 = "0.21.0"
-tokio = "1.21.0"
+tokio = "1.24.2"
 rusoto_core = "0.47.0"
 rusoto_kms = "0.47.0"
 openssl = { version = "0.10.48", features = ["vendored"] }
