@@ -9,4 +9,4 @@ base64 = "0.21.0"
 tokio = "1.21.0"
 rusoto_core = "0.47.0"
 rusoto_kms = "0.47.0"
-openssl = { version = "0.10.48", features = ["vendored"] }
+openssl = { version = "0.10.55", features = ["vendored"] }
