@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-bytes = "1.2.1"
+bytes = "1.5.0"
 base64 = "0.21.0"
 tokio = "1.21.0"
 rusoto_core = "0.47.0"
