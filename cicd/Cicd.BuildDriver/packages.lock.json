@@ -55,19 +55,46 @@
         "resolved": "13.0.2",
         "contentHash": "hRPqCt2bxTvHN6iT2JNG2KznDPFgD5B6j0bQ7woSpfGctmjgAYdKQ+LYHUaj/7q8sN1AbIcTNbaO75g8IFmTjw=="
       },
+      "Amazon.CDK.Asset.AwsCliV1": {
+        "type": "Transitive",
+        "resolved": "2.2.282",
+        "contentHash": "cVwuMPWEKL7UucdTr9dQsZosf/5h649wBogs/yISV7frMCpUQyiqHw8EWdxs05Sd/9fZN+GQmeCZpV3H37WGqw==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.130.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.Asset.NodeProxyAgentV6": {
+        "type": "Transitive",
+        "resolved": "2.1.2",
+        "contentHash": "gBPI+0hF7GxFviUqy2sSpk8rt4rtpweZfhBb7Jq+tnO5LeXo7YDjs6+19eCLFJxE5XJvWntYhJHtumuwE9nYjg==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.129.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.CloudAssembly.Schema": {
+        "type": "Transitive",
+        "resolved": "54.0.0",
+        "contentHash": "OR2Iek48jWNAHB99CD3kqDP5GBSc8FxwZh4RjrCSPmFhxNx742PFN0OnE6AGevWqUVuBEc7GUVvJ/KJk75XTnQ==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.132.0, 2.0.0)"
+        }
+      },
       "Amazon.CDK.Lib": {
         "type": "Transitive",
-        "resolved": "2.40.0",
-        "contentHash": "v3lBSWxrP9u2AOPIx06nZcuJ4qbSKEdwGiDgYf8iwz717ZP/mW6UsZk29XDP6xpf5K9Z14KDbn+Xd1ACP35Nkg==",
+        "resolved": "2.260.0",
+        "contentHash": "2U4Lt70e8jtmTaNU/vMEuJ+M99WCI5XH09UpTdCFRsdLYFgetgKW/obVoMrExtx8ONw0YXJhbt+yhE5PN7Z1yw==",
         "dependencies": {
-          "Amazon.JSII.Runtime": "[1.66.0, 2.0.0)",
-          "Constructs": "[10.0.0, 11.0.0)"
+          "Amazon.CDK.Asset.AwsCliV1": "[2.2.282]",
+          "Amazon.CDK.Asset.NodeProxyAgentV6": "[2.1.2, 3.0.0)",
+          "Amazon.CDK.CloudAssembly.Schema": "[54.0.0, 55.0.0)",
+          "Amazon.JSII.Runtime": "[1.133.0, 2.0.0)",
+          "Constructs": "[10.5.0, 11.0.0)"
         }
       },
       "Amazon.JSII.Runtime": {
         "type": "Transitive",
-        "resolved": "1.127.0",
-        "contentHash": "fO2UKmVj5/hwpYtXlmrMYKxBCZYX3fHOiKTXSb3kcXQ9G4a+01VhqKLJc9rv1N9V3IbzKtT4CDZ7ZCKHUJCv5Q==",
+        "resolved": "1.133.0",
+        "contentHash": "gW4AYsvgj0b3SVPVxFYc33dTRQ7ekg3YAq00Zoeepa/IGAUY51WMOhc+Y8qQLuZO4Cs2CRTcUkEZJtRJPgZ/Pw==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.1",
           "Microsoft.Extensions.Logging": "9.0.1",
@@ -555,7 +582,7 @@
       "cicd.artifacts": {
         "type": "Project",
         "dependencies": {
-          "Amazon.CDK.Lib": "[2.40.0, )",
+          "Amazon.CDK.Lib": "[2.260.0, )",
           "Cicd.Utils": "[1.0.0, )",
           "Constructs": "[10.6.0, )",
           "Microsoft.Build.Framework": "[17.14.28, )",
