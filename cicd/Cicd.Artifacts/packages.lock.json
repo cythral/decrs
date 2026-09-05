@@ -23,16 +23,9 @@
       },
       "Microsoft.Build.Framework": {
         "type": "Direct",
-        "requested": "[17.14.28, )",
-        "resolved": "17.14.28",
-        "contentHash": "wRcyTzGV0LRAtFdrddtioh59Ky4/zbvyraP0cQkDzRSRkhgAQb0K88D/JNC6VHLIXanRi3mtV1jU0uQkBwmiVg==",
-        "dependencies": {
-          "Microsoft.Win32.Registry": "5.0.0",
-          "System.Diagnostics.DiagnosticSource": "9.0.0",
-          "System.Memory": "4.6.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.1.0",
-          "System.Security.Principal.Windows": "5.0.0"
-        }
+        "requested": "[17.15.0-preview-25466-101, )",
+        "resolved": "17.15.0-preview-25466-101",
+        "contentHash": "OhuAtSIv/hjDbzy3YWWjddw5my0FA3/N+NnHw5dOoOIP4C8SN79Hkz8MOi9RXO4vgD6JPSY7iKz5JJcbSoWxsw=="
       },
       "Microsoft.Build.Utilities.Core": {
         "type": "Direct",
