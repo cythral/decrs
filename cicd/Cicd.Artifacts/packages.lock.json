@@ -4,12 +4,15 @@
     "net6.0": {
       "Amazon.CDK.Lib": {
         "type": "Direct",
-        "requested": "[2.40.0, )",
-        "resolved": "2.40.0",
-        "contentHash": "v3lBSWxrP9u2AOPIx06nZcuJ4qbSKEdwGiDgYf8iwz717ZP/mW6UsZk29XDP6xpf5K9Z14KDbn+Xd1ACP35Nkg==",
+        "requested": "[2.253.0, )",
+        "resolved": "2.253.0",
+        "contentHash": "i0Gmf1MiGY+vvJDrA4w/lE1zDeX6z8eFqEEQoBf3pBX3M2AlJ3tIf8hC2ghVBJRRIqNtVd8UJceHNKTgU/V1BQ==",
         "dependencies": {
-          "Amazon.JSII.Runtime": "[1.66.0, 2.0.0)",
-          "Constructs": "[10.0.0, 11.0.0)"
+          "Amazon.CDK.Asset.AwsCliV1": "[2.2.273]",
+          "Amazon.CDK.Asset.NodeProxyAgentV6": "[2.1.1, 3.0.0)",
+          "Amazon.CDK.CloudAssembly.Schema": "[53.18.0, 54.0.0)",
+          "Amazon.JSII.Runtime": "[1.128.0, 2.0.0)",
+          "Constructs": "[10.5.0, 11.0.0)"
         }
       },
       "Constructs": {
@@ -62,10 +65,34 @@
           "StyleCop.Analyzers.Unstable": "1.2.0.556"
         }
       },
+      "Amazon.CDK.Asset.AwsCliV1": {
+        "type": "Transitive",
+        "resolved": "2.2.273",
+        "contentHash": "sNrCpli0bZx+J1XjV8mar6awALyipXn3FbG9sOq6BRU7+Rf+TpTmUTIRdv02W/HGsYQMkUrF+KfyfoTa5ukHNA==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.127.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.Asset.NodeProxyAgentV6": {
+        "type": "Transitive",
+        "resolved": "2.1.1",
+        "contentHash": "ChVhSwQ4b6pM/JNcMZAkgbuO6EE+zjP7gS99qfG50WkyVkD7+pVAB1CEispctF52qiA9B47il0xmnenAuI1/Rw==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.126.0, 2.0.0)"
+        }
+      },
+      "Amazon.CDK.CloudAssembly.Schema": {
+        "type": "Transitive",
+        "resolved": "53.18.0",
+        "contentHash": "mc2AVsTCt9AmGxyY6wuIw6tVKeKyQmvREnqnHHlgW5jEpsY8Rjq9Lzgdl6LRUCD/vW6C8Z669bImQR8hkgpS/Q==",
+        "dependencies": {
+          "Amazon.JSII.Runtime": "[1.128.0, 2.0.0)"
+        }
+      },
       "Amazon.JSII.Runtime": {
         "type": "Transitive",
-        "resolved": "1.127.0",
-        "contentHash": "fO2UKmVj5/hwpYtXlmrMYKxBCZYX3fHOiKTXSb3kcXQ9G4a+01VhqKLJc9rv1N9V3IbzKtT4CDZ7ZCKHUJCv5Q==",
+        "resolved": "1.128.0",
+        "contentHash": "9Ae+BPh5jfhoQcXKoEIt2wI0Iem7measYRxfZNcYJIzxEap05S0J/lytNLlFJIkOFz1Unyz/F8qtBy1Qc2LsCQ==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.1",
           "Microsoft.Extensions.Logging": "9.0.1",
